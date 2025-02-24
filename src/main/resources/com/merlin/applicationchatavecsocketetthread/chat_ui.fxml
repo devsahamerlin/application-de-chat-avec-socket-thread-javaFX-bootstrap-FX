@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+    <VBox spacing="20" alignment="CENTER"  xmlns:fx="http://javafx.com/fxml" fx:controller="com.merlin.applicationchatavecsocketetthread.ChatController">
+        <padding>
+            <Insets top="20" left="20" bottom="20" right="20"/>
+        </padding>
+
+        <TextField fx:id="nameField" promptText="Enter your name" />
+        <Button fx:id="joinButton" text="Join" onAction="#handleJoinButtonClick" />
+
+        <ListView fx:id="chatListView" prefHeight="400" editable="false"/>
+
+        <HBox spacing="10">
+            <TextField fx:id="messageField" promptText="Enter your message" />
+            <Button fx:id="sendButton" text="Send" onAction="#handleSendButtonClick" />
+        </HBox>
+    </VBox>
